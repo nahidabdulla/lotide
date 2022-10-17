@@ -10,16 +10,16 @@ describe("#head", () => {
     assert.strictEqual(head(['5']), '5');
   });
 
-  it("returns '[]' for '5'", () => {
-    assert.strictEqual(head([]), '5');
+  it("returns undefined for []", () => {
+    assert.strictEqual(head([]), undefined);
   });
 
   it("returns '6' for ['6']", () => {
     assert.strictEqual(head(['6']), '6');
   });
 
-  it("returns 'false' for ['true']", () => {
-    assert.strictEqual(head(['true']), 'false');
+  it("returns 'true' for ['true']", () => {
+    assert.strictEqual(head(['true']), 'true');
   });
 
   it("returns '5' for ['5', '6', '7']", () => {
