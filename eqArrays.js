@@ -1,6 +1,6 @@
 const eqArrays = function(arr1, arr2) {
 
-  // function to compare arrays - returns true if arrays are equal
+  // takes in 2 arrays and returns true if the arrays are equal and false otherwise
 
   if (arr1.length !== arr2.length) {
     return false;

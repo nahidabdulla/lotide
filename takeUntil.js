@@ -1,5 +1,5 @@
-/*returns a sliced version of the array based on condition 
-specified in the callback*/
+/*Takes in an array and callback and returns a slice of the array 
+based on the criteria specified in the callback*/
 
 const takeUntil = function(arr, callback) {
   let sliced = [];

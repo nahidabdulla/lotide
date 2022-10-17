@@ -1,4 +1,4 @@
-//returns counts of specified items
+//Takes in a collection of items and returns a specific subset of those items
 
 const countOnly = function(allItems, itemsToCount) {
   const results = {};

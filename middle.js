@@ -1,4 +1,4 @@
-//returns the element(s) in the middle of the array
+//Takes in an array and returns middle most element(s) of the array
 
 const middle = function(arr) {
   let midValue = [];

@@ -1,4 +1,4 @@
-//function to count frequency of letters in a word
+//Takes in a sentence and returns a count of each of the letters in the sentence
 
 const countLetters = function(words) {
   const results = {};

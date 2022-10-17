@@ -1,6 +1,7 @@
 const eqArrays = require('./eqArrays');
 
-// returns items in sourceArr that aren't in itemsToRemove
+/*Takes in a source array and an itemsToRemove arrays and returns only the 
+items from the source array that are not in the itemsToRemove array*/
 
 const without = function(sourceArr, itemsToRemove) {
 

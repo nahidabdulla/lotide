@@ -1,4 +1,4 @@
-//returns all indices of letter positions in the string
+//Takes in a string and returns all indices of letter positions in the string
 
 const letterPositions = function(sentence) {
   const results = {};
