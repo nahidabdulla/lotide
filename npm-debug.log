@@ -1,0 +1,59 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'login' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 verbose adduser before first PUT { _id: 'org.couchdb.user:nabdulla',
+4 verbose adduser   name: 'nabdulla',
+4 verbose adduser   password: 'XXXXX',
+4 verbose adduser   email: 'n.abdulla1@hotmail.ca',
+4 verbose adduser   type: 'user',
+4 verbose adduser   roles: [],
+4 verbose adduser   date: '2022-10-25T22:02:20.633Z' }
+5 verbose request uri https://registry.npmjs.org/-/user/org.couchdb.user:nabdulla
+6 verbose request new user, so can't send auth
+7 info attempt registry request try #1 at 10:02:20 PM
+8 verbose request id e306071ac3307577
+9 http request PUT https://registry.npmjs.org/-/user/org.couchdb.user:nabdulla
+10 http 401 https://registry.npmjs.org/-/user/org.couchdb.user:nabdulla
+11 verbose headers { date: 'Tue, 25 Oct 2022 22:02:22 GMT',
+11 verbose headers   'content-type': 'application/json',
+11 verbose headers   'content-length': '87',
+11 verbose headers   connection: 'keep-alive',
+11 verbose headers   'cf-ray': '75fe3c6c6d22bede-YYC',
+11 verbose headers   'www-authenticate': 'OTP',
+11 verbose headers   'cf-cache-status': 'DYNAMIC',
+11 verbose headers   'npm-notice': 'Please use the one-time password (OTP) from your authenticator application',
+11 verbose headers   vary: 'Accept-Encoding',
+11 verbose headers   server: 'cloudflare' }
+12 warn notice Please use the one-time password (OTP) from your authenticator application
+13 verbose request invalidating /home/vagrant/.npm/registry.npmjs.org/-/user/org.couchdb.user_3Anabdulla on PUT
+14 verbose adduser back [ { [Error: failed to authenticate: Could not authenticate nabdulla: bad otp : -/user/org.couchdb.user:nabdulla] statusCode: 401, code: 'E401' },
+14 verbose adduser   { ok: false,
+14 verbose adduser     error: 'failed to authenticate: Could not authenticate nabdulla: bad otp' },
+14 verbose adduser   '{"ok":false,"error":"failed to authenticate: Could not authenticate nabdulla: bad otp"}' ]
+15 warn adduser Incorrect username or password
+15 warn adduser You can reset your account by visiting:
+15 warn adduser
+15 warn adduser     https://npmjs.org/forgot
+16 verbose stack Error: failed to authenticate: Could not authenticate nabdulla: bad otp : -/user/org.couchdb.user:nabdulla
+16 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+16 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+16 verbose stack     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+16 verbose stack     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+16 verbose stack     at emitTwo (events.js:87:13)
+16 verbose stack     at Request.emit (events.js:172:7)
+16 verbose stack     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+16 verbose stack     at emitOne (events.js:82:20)
+16 verbose stack     at Request.emit (events.js:169:7)
+16 verbose stack     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+17 verbose statusCode 401
+18 verbose cwd /vagrant/lotide
+19 error Linux 4.4.0-87-generic
+20 error argv "/usr/bin/nodejs" "/usr/bin/npm" "login"
+21 error node v4.2.6
+22 error npm  v3.5.2
+23 error code E401
+24 error failed to authenticate: Could not authenticate nabdulla: bad otp : -/user/org.couchdb.user:nabdulla
+25 error If you need help, you may report this error at:
+25 error     <https://github.com/npm/npm/issues>
+26 verbose exit [ 1, true ]
